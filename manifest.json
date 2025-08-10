@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Remove GPT Landing Gradient",
+  "version": "1.0",
+  "description": "Hides the gradient background image on the GPT-5 landing page.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*"
+      ],
+      "js": ["remove-gradient.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": []
+}
